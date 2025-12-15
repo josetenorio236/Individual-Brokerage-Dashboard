@@ -13,7 +13,7 @@ from datetime import datetime, timedelta
 # 1) USER CONFIG / PORTFOLIO
 # ==========================
 st.set_page_config(page_title="Quant Portfolio Dashboard", layout="wide")
-st.title("📈 Quant Portfolio Dashboard (Single-file) — Rebalance & Backtest")
+st.title("Quant Portfolio Dashboard — Rebalance & Backtest")
 
 # --- Portfolio definition (edit quantities / cost_basis here) ---
 portfolio = {
