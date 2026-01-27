@@ -17,7 +17,7 @@ st.title("Quant Portfolio Dashboard — Rebalance & Backtest")
 
 # --- Portfolio definition (edit quantities / cost_basis here) ---
 portfolio = {
-    "AAPL": {"quantity": 4, "cost_basis": 278.03},
+    "AAPL": {"quantity": 3, "cost_basis": 278.03},
     "MSFT": {"quantity": 2, "cost_basis": 483.47},
     "ORCL": {"quantity": 1, "cost_basis": 198.85},
     "NVDA": {"quantity": 3, "cost_basis": 180.93},
