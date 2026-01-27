@@ -105,7 +105,7 @@ for t, info in portfolio.items():
     rows.append({
         "Ticker": t,
         "Quantity": qty,
-        "Price": round(price, 2) if not pd.isna(price),
+        "Price": round(price, 2) if not pd.isna(price) else None,
         "Market Value": round(market_value, 2) if not pd.isna(market_value) else None,
         "Cost Basis": cost,
         "Total Cost": round(cost_value, 2),
