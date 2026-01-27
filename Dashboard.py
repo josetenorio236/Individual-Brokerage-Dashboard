@@ -17,7 +17,7 @@ st.title("Quant Portfolio Dashboard — Rebalance & Backtest")
 
 # --- Portfolio definition (edit quantities / cost_basis here) ---
 portfolio = {
-    "AAPL": {"quantity": 3, "cost_basis": 278.03},
+    "AAPL": {"quantity": 4, "cost_basis": 278.03},
     "MSFT": {"quantity": 2, "cost_basis": 483.47},
     "ORCL": {"quantity": 1, "cost_basis": 198.85},
     "NVDA": {"quantity": 3, "cost_basis": 180.93},
@@ -105,7 +105,7 @@ for t, info in portfolio.items():
     rows.append({
         "Ticker": t,
         "Quantity": qty,
-        "Price": round(price, 2) if not pd.isna(price) else None,
+        "Price": round(price, 2) if not pd.isna(price),
         "Market Value": round(market_value, 2) if not pd.isna(market_value) else None,
         "Cost Basis": cost,
         "Total Cost": round(cost_value, 2),
